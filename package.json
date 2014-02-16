@@ -1,0 +1,20 @@
+{
+  "name": "require-assets-example",
+  "version": "0.0.0",
+  "description": "Example project using require-assets",
+  "main": "server.js",
+  "scripts": {
+    "build": "browserify -p [ require-assets-browserify -o ./assets.json ] -o ./bundle.js ./client.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bootstrap": "git+https://github.com/twbs/bootstrap",
+    "express": "~3.4.8",
+    "require-assets": "*",
+    "require-assets-middleware": "*",
+    "require-assets-browserify": "*",
+    "browserify": "~3.30.1"
+  },
+  "author": "",
+  "license": "MIT"
+}
